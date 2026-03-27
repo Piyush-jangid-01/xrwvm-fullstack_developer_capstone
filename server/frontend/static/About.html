@@ -1,18 +1,21 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<div>
+
+<body>
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
@@ -24,45 +27,57 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+
+  <!-- MAIN CARD -->
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%; padding:20px;">
+
+    <!-- HEADER -->
+    <div class="banner">
+      <h1 style="text-align:center;">About Our Dealership</h1>
+      <p style="text-align:center;">
+        We provide the best car buying experience with trusted dealers and verified reviews.
+      </p>
+    </div>
+
+    <!-- TEAM SECTION -->
+    <div style="display: flex; justify-content: space-around; margin-top:30px;">
+
+      <!-- PERSON 1 -->
+      <div class="card" style="width: 30%; text-align:center;">
+        <img class="card-img-top" src="/static/person.png" alt="Person1">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <h3>Piyush Jangid</h3>
+          <p>Frontend Developer</p>
+          <p>Builds responsive UI and improves user experience.</p>
+          <p><b>Email:</b> piyush@email.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <!-- PERSON 2 -->
+      <div class="card" style="width: 30%; text-align:center;">
+        <img class="card-img-top" src="/static/person.png" alt="Person2">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <h3>Rahul Sharma</h3>
+          <p>Backend Developer</p>
+          <p>Handles APIs, database integration, and server logic.</p>
+          <p><b>Email:</b> rahul@email.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <!-- PERSON 3 -->
+      <div class="card" style="width: 30%; text-align:center;">
+        <img class="card-img-top" src="/static/person.png" alt="Person3">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <h3>Neha Verma</h3>
+          <p>UI/UX Designer</p>
+          <p>Designs clean interfaces and enhances user interaction.</p>
+          <p><b>Email:</b> neha@email.com</p>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
+    </div>
+
+  </div>
+
+</body>
 </html>
