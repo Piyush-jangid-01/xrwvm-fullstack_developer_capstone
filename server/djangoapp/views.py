@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render
 import json
 
 # ---------------- AUTH ----------------
@@ -115,15 +116,10 @@ def fetchReviews(request, dealer_id):
 
 def get_cars(request):
     return JsonResponse({
-        "CarModels": [
-            {
-                "make": "Toyota",
-                "model": "Corolla"
-            },
-            {
-                "make": "Honda",
-                "model": "Civic"
-            }
+        "Car_Makes": [
+            {"CarMake": "Toyota", "CarModel": "Corolla"},
+            {"CarMake": "Honda", "CarModel": "Civic"},
+            {"CarMake": "Ford", "CarModel": "Focus"}
         ]
     })
 
@@ -135,3 +131,7 @@ def analyze(request, text):
         "review": text,
         "sentiment": "positive"
     })
+
+
+def home(request):
+    return render(request, "index.html")
